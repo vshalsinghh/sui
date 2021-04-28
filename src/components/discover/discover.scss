@@ -1,0 +1,110 @@
+.discover{
+    padding-left: 47px;
+    padding-right:47px;
+    margin-bottom:47px;
+    max-width:1400px;
+    margin: 0 auto;
+    
+
+    .discover-text{
+        text-align: left;
+        margin-bottom: 20px;
+        p{
+            font-size: 20px;
+            color:#676767;
+        }
+    }
+    .discover-cards{
+        display: grid;
+        grid-template-rows: repeat(4, 1fr) ;
+        grid-template-columns: auto;
+        grid-gap:20px;
+        padding-left: auto;
+        padding-right: auto;
+        .card{
+            background:#212121;
+            max-width:420px;
+            height:502px;
+        }
+        .card1, .card3{
+            background: url('../../assets/images/model.png') no-repeat center ;
+            background-size: cover;
+        }
+        .card2, .card4{
+            background: url('../../assets/images/model2.png') no-repeat center ;
+            background-size: cover;
+        }
+    }
+    .feelgoodtext{
+        width:100%;
+        padding:5% 25%;
+        h4{
+            font-size:22px;
+            line-height: 40px;
+        }
+
+    }
+    .discover-env{
+        display:grid;
+        grid-template-rows: repeat(2, 1fr);
+        gap:20px;
+        .env-card{
+            display:flex;
+            flex-direction: column;
+            span{
+                height:457px;
+                background-color: #212121;
+            }
+            .env-text{
+                text-align: center;
+                h2{
+                    font-size:26px;
+                    line-height: 69px;
+                }
+                a{
+                    color:#676767;
+                    text-decoration: none;
+                }
+            }
+
+        }
+        .env1 span{
+            background: url('../../assets/images/env1.png') no-repeat center ;
+            background-size: cover;
+        }
+        .env2 span{
+            background: url('../../assets/images/env2.png') no-repeat center ;
+            background-size: cover;
+        }
+    }
+
+}
+
+@media (min-width:515px){
+    .discover{
+        .discover-cards{
+            grid-template-rows: repeat(2, 1fr) ;
+            grid-template-columns: repeat(2,1fr);
+        }
+        
+    }
+}
+@media (min-width:960px){
+    .discover{
+        margin-bottom: 100px;
+        .discover-cards{
+            grid-template-rows: auto ;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .discover-env{
+            margin:20px 40px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            .env-card{
+                .env-text{
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

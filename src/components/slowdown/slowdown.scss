@@ -1,0 +1,91 @@
+.slowdown{
+    width:100%;
+    background-color:#f5f4f1;
+    padding-top:106px;
+    padding-bottom: 80px;
+    padding-left:56px;
+    padding-right: 56px;
+    text-align: left;
+    margin-bottom: 47px;
+    .slow-hdr{
+        margin-bottom: 50px;
+        h1{
+            text-align: center;
+            font-size: 80px;
+            line-height: 55px;
+        }
+
+    }
+    .slow-contr{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .slow-image{
+            background-color:#000000;
+            min-width:574px;
+            height:532px;
+            background: url('../../assets/images/slow.png') no-repeat center;
+            background-size: cover;
+        }
+        .slow-text{
+            text-align: center;
+            margin-top:20px;
+            margin-bottom: 20px;
+            .feelgoodtext{
+                margin-bottom: 47px;
+        
+            }
+            .effect{
+                display: flex;
+                margin-left:47px;
+                span{
+                    width:26px;
+                    height:40px;
+                    background: url('../../assets/images/cloud.png') no-repeat center;
+                    background-size: contain;
+                    margin-right:18px;
+                }
+            }
+            .eff2{
+                span{
+                    width:25px;
+                    height:35.48px;
+                    background: url('../../assets/images/water.png') no-repeat center; 
+                }
+            }
+
+        }
+    }
+}
+@media (min-width:950px){
+    .slowdown{
+        .slow-hdr{
+            h1{
+                text-align: left;
+            }
+        }
+        .slow-contr{
+            flex-direction: row;
+            align-items: flex-start;
+            .slow-image{
+                margin-right: 30px;
+            }
+            .slow-text{
+                text-align: left;
+                .effect{
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+}
+@media (min-width:1000px){
+    .slowdown{
+        .slow-contr{
+            .slow-image{
+                margin-right: 80px;
+            }
+        }
+    }
+}
